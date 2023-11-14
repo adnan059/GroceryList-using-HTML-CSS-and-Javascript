@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Grocery List with Local Storage</title>
+  </head>
+  <body>
+    <main>
+      <section class="groceryList">
+        <h1>
+          My Grocery List
+          <a class="fa-brands fa-github" href="#" target="_blank"></a>
+        </h1>
+
+        <input
+          type="search"
+          id="searchBar"
+          name="searchBar"
+          placeholder="Looking for Any Item?"
+        />
+
+        <div class="inputHeader">
+          <form class="groceryForm" id="groceryForm" method="post">
+            <input
+              type="text"
+              id="itemInput"
+              name="itemInput"
+              placeholder="Enter an Item..."
+            /><input type="submit" id="addBtn" value="Add Item" />
+          </form>
+          <!--grocery input-->
+        </div>
+        <!--input header-->
+
+        <div id="itemList"></div>
+        <!-- item list-->
+
+        <button id="clearAll">Clear All</button>
+      </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
